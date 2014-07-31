@@ -1,0 +1,1 @@
+Date::DATE_FORMATS[:DEFAULT]= "%B" "%e", "Y"

@@ -1,0 +1,34 @@
+<%= form_for(@exercise) do |f|%>
+	<p>
+		<%= f.label :title %> <br/>
+		<%= f.text_field :title, autofocus: true %>
+	</p>
+	<p>
+		<%= f.label :continut %> <br/>
+		<%= f.text_area :continut, cols:100,rows:10 %>
+	</p>
+	<p>
+		<%= f.label :image_file_name %><br/>
+		<%= f.text_field :image_file_name%>
+	</p>
+	<p>
+		<%= f.label :descriere %> <br/>
+		<%= f.text_field :descriere %>
+	</p>
+	<p>
+		<%= f.label :dificultate %> <br/>
+		<%= f.number_field :dificultate %>
+	</p>
+	<p>
+		<%= f.label :categorie %> <br/>
+		<%= f.text_field :categorie %>
+	</p>
+	<p>
+		<%= f.label :data_postarii %> <br/>
+		<%= f.date_select :data_postarii %>
+	</p>
+	<p>
+		<%= f.submit%> |
+		<%= link_to "Cancel" , exercises_path %>
+	</p>
+<%end%>

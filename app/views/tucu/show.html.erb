@@ -1,0 +1,14 @@
+<h1><%= @exercise.title%></h1>
+<ul>
+	<li><%=@exercise.dificultate%></li>
+	<li><%=@exercise.continut%></li>
+</ul>
+<h3>Image</h3>
+<%= image_for(@exercise)%>
+
+<br>
+<nav>
+<%= link_to"All Exercises",tucu_path %> | 
+<%=link_to "Edit", edit_exercise_path(@exercise)%> |
+<%= link_to "Delete", exercise_path(@exercise), method: :delete, data:{confirm:'Esti sigur?'}%>
+</nav>
